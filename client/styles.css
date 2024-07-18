@@ -1,0 +1,345 @@
+/* Base styles */
+body {
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styles */
+.complaints {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading styles */
+.complaints h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.complaints button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.complaints button:hover {
+    background-color: #0056b3;
+}
+
+/* List styles */
+.complaints ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.complaints ul li {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.complaints ul li .section {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.complaints ul li .section h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.complaints ul li .section p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Address styles */
+.complaints ul li .address {
+    background-color: #e7f3ff;
+}
+
+.complaints ul li .address h3 {
+    color: #0056b3;
+}
+
+/* Location styles */
+.complaints ul li .location {
+    background-color: #fff3e7;
+}
+
+.complaints ul li .location h3 {
+    color: #b37400;
+}
+
+/* Resolve styles */
+.complaints ul li .resolve {
+    background-color: #e7ffe7;
+}
+
+.complaints ul li .resolve h3 {
+    color: #007b00;
+}
+
+/* Complaint styles */
+.complaints ul li .complaint {
+    background-color: #ffe7e7;
+}
+
+.complaints ul li .complaint h3 {
+    color: #b30000;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .complaints {
+        padding: 15px;
+    }
+    
+    .complaints h2 {
+        font-size: 20px;
+    }
+    
+    .complaints button {
+        font-size: 14px;
+    }
+    
+    .complaints ul li {
+        padding: 10px;
+    }
+    
+    .complaints ul li .section {
+        padding: 8px;
+    }
+    
+    .complaints ul li .section h3 {
+        font-size: 16px;
+    }
+    
+    .complaints ul li .section p {
+        font-size: 12px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+.complaints, .resolved-complaints {
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.resolve-complaint {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Space inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px; /* Maximum width */
+    margin: 20px auto; /* Center align and add margin */
+    text-align: center; /* Center align text */
+}
+
+.resolve-complaint h2 {
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Darker text color */
+}
+.navbar-container {
+    display: flex;
+    width: 560px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; /* Example background color */
+    padding: 10px 20px;
+    color: white; /* Text color */
+  }
+  
+  .title {
+    margin: 0;
+font-style: italic;
+font-family: cursive;
+   font-size: medium;
+  }
+  
+  .metamask-address {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  .navbar-logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+  }
+  
+
+
+.footer {
+   
+    color: #fff;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    text-align: center; /* Center-align the text */
+    background-color: #f0f0f0; /* Example background color */
+    padding: 10px 0; /* Add padding for better spacing */
+
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .heart {
+    color: red;
+    margin: 0 5px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 60px; /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 40px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+
+
+.resolve-complaint input[type="number"] {
+    width: calc(100% - 24px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 20px; /* Space below the input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.resolve-complaint button {
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.resolve-complaint button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+

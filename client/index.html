@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR Registration</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <h1 class="title">FIR Registration</h1>
+           
+            <div class="metamask-address" id="metamaskAddress">
+                Loading MetaMask address...
+            </div>
+            <div class="navbar-logo">
+                <a href="#">
+                    
+                 <img src="data:image/png;base64,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" alt="logo">
+                </a>
+            </div>
+        </div>
+        
+        <button id="connectButton" onclick="connectMetaMask()">Connect MetaMask</button>
+        <div id="appContent" style="display:none;">
+            <div class="form-group">
+                <input type="text" id="location" placeholder="Location">
+                <input type="text" id="complaint" placeholder="Complaint">
+                <button onclick="registerComplaint()">Register Complaint</button>
+            </div>
+            <div class="resolve-complaint">
+                <h2>Resolve Complaint</h2>
+                <input type="number" id="complaintId" placeholder="Complaint ID">
+                <button onclick="resolveComplaint()">Resolve Complaint</button>
+            </div>
+            <div class="complaints">
+                <h2>All Complaints</h2>
+                <button onclick="fetchAllComplaints()">Fetch All Complaints</button>
+                <ul id="complaintsList"></ul>
+            </div>
+           
+        </div>
+        <footer className="footer">
+            <p className="footer-text">Made by <span className="heart">❤️</span> Kaustubh</p>
+          </footer>
+    </div>
+    <script>
+        window.addEventListener('load', async () => {
+            // Check if MetaMask is installed
+            if (window.ethereum) {
+                window.web3 = new Web3(window.ethereum);
+                try {
+                    // Request account access
+                    await window.ethereum.enable();
+                    // Get MetaMask address
+                    const accounts = await window.web3.eth.getAccounts();
+                    const address = accounts[0];
+                    document.getElementById('metamaskAddress').textContent = `MetaMask Address: ${address}`;
+                } catch (error) {
+                    console.error('User denied account access or MetaMask not installed:', error);
+                    document.getElementById('metamaskAddress').textContent = 'MetaMask not available or access denied.';
+                }
+            } else {
+                console.warn('MetaMask not detected.');
+                document.getElementById('metamaskAddress').textContent = 'MetaMask not installed or not detected.';
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
