@@ -239,7 +239,7 @@ ul li {
 }
 .navbar-container {
     display: flex;
-    width: 560px;
+
     justify-content: space-between;
     align-items: center;
     background-color: #007bff; /* Example background color */
