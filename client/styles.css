@@ -343,3 +343,22 @@ font-family: cursive;
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-logo {
+        margin-top: 10px;
+    }
+
+    .navbar-logo img {
+        max-width: 80px;
+    }
+}
